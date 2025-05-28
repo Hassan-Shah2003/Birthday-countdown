@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Personal Information</h1>
+        <label>Enter Your Name:
+            <input placeholder="Enter Your name" id="username" type="text" required>
+        </label>   
+        <label>Enter Your Birthday Date:
+            <input type="date" id="userbirthdate" placeholder="Enter Your Birthday Date" required>
+        </label>
+        <button id="btn">Check Your Birthday Date</button>
+    </div>
+
+    <div class="countdown-container" id="countdown-container">
+        <h2 id="greeting"></h2>
+        <div class="countdown-boxes" id="countdown-boxes">
+            <div class="box"><span id="days">0</span ><div class="label">Days</div></div>
+            <div class="box"><span id="hours">0</span><div class="label">Hours</div></div>
+            <div class="box"><span id="minutes">0</span><div class="label">Minutes</div></div>
+            <div class="box"><span id="second">0</span><div class="label"></div>Second</div>
+        </div>
+        <div class="message" id="message"></div>
+        <button id="btn-1">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
